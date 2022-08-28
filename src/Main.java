@@ -25,13 +25,13 @@ public class Main {
 
         // task 03//
 
-        fullName = "Иванов Семён Семёнович";
+        fullName = fullName.replaceAll("Ivanov Ivan Ivanovich", "Иванов Семён Семёнович");
         if (fullName.contains("ё"))
             fullName = fullName.replace("ё", "е");
         if (fullName.contains("Ё")) {
             fullName = fullName.replace("Ё", "Е");
         }
-        
+
         System.out.println(fullName);
 
 
